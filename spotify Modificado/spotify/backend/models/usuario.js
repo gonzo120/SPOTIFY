@@ -1,3 +1,4 @@
+// tiene 2 atributos
 var mongoose = require('mongoose');
 var esquema = new mongoose.Schema(
     {
