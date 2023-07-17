@@ -1,0 +1,26 @@
+<!--  <router-outlet></router-outlet>   -->
+
+<app-header></app-header>
+
+<div class="container-fluid">
+  <div class="row">
+    <!-- sidebar-->
+    <app-sidebar (onVerArtistas)="verArtista($event)" (onVerPlaylists)="verPlaylist($event)"></app-sidebar>
+     
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+      <div id="vista-playlist" *ngIf="regionVisible == 'playlists'">
+        <!--playlists-->
+        <app-playlist></app-playlist>
+      </div>
+
+      <!------------------------------->
+
+      <div id="vista-artista" *ngIf="regionVisible == 'artistas'" >
+        <!--Artistas-Album-->
+        <app-album></app-album>
+        </div><!--vista-artista-->
+        
+        
+    </main>
+  </div>
+</div>
