@@ -152,7 +152,7 @@ padding-top: 133px; /* Space for fixed navbar */
     height: 300px;
     margin-left: auto;
     margin-right: auto;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-color: #050608;
     display: flex;
